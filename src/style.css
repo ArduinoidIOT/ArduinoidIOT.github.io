@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&family=Manrope:wght@200;300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200');
+:root {
+  font-family: Manrope, system-ui, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: dark;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  --primary-bg: #121518;
+  --primary-bg-rgb: 18, 21, 24;
+  --accent-main: 214, 50, 48;
+  --accent-main-hex: #d63230;
+  --accent-light: 243, 194, 193;
+  --accent2-main: 223, 75, 49;
+  --accent2-main-hex: #df4b31;
+  --accent3-main: 236, 51, 60;
+  --accent3-main-hex: #ec333c;
+
+  scroll-behavior: smooth;
+}
+body {
+  background-color: var(--primary-bg);
+  margin: 0;
+  scrollbar-gutter: stable;
+}
+* {
+  cursor: none !important;
+  user-select: none;
+}
+#app {
+  position: relative;
+  top: 0;
+}
