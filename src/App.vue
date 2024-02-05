@@ -8,15 +8,16 @@ import CustomCursor from "./components/CustomCursor.vue";
 import Skills from "./components/skills/Skills.vue";
 import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
+import WipWarning from "./components/WipWarning.vue";
 
 gsap.registerPlugin(ScrollTrigger);
 const menuOpen = ref(false);
+const wipOpen = ref(true);
 </script>
 
 <template>
   <div id="main">
     <MenuButton :open="menuOpen" @click="menuOpen = !menuOpen" />
-
     <Transition name="menubg">
       <Menu v-if="menuOpen" @closemenu="menuOpen = false" />
     </Transition>
@@ -24,6 +25,7 @@ const menuOpen = ref(false);
     <Skills />
     <BGeffect />
     <CustomCursor />
+    <WipWarning :wipopen="wipOpen" @close="wipOpen = false" />
   </div>
 </template>
 <style>
