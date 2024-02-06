@@ -25,7 +25,7 @@ const props = defineProps(["wipopen"]);
   left: 0;
   right: 0;
   bottom: 0;
-  backdrop-filter: blur(2.5rem);
+  background: var(--primary-bg);
   z-index: 9998;
   padding: 4rem;
   display: flex;
