@@ -146,6 +146,7 @@ onBeforeUnmount(() => {
   border: 0.1rem solid rgba(var(--accent-light), 0.2);
   box-shadow: 0 0 10rem rgba(var(--accent-main), 0.2);
   display: flex;
+  position: relative;
 }
 
 .terminalwindow .titlebar {
