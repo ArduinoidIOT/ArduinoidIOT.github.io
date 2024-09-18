@@ -25,11 +25,10 @@ const wipOpen = ref(true);
     <Skills />
     <BGeffect />
     <CustomCursor />
-    <!WipWarning :wipopen="wipOpen" @close="wipOpen = false" />
+    <WipWarning :wipopen="wipOpen" @close="wipOpen = false" />
   </div>
 </template>
 <style>
-
 .menubg-enter-from,
 .menubg-leave-to {
   transform: translateY(-100%);
